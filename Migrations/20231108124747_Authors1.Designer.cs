@@ -4,6 +4,7 @@ using Adamescu_Georgiana_Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Adamescu_Georgiana_Lab2.Migrations
 {
     [DbContext(typeof(Adamescu_Georgiana_Lab2Context))]
-    partial class Adamescu_Georgiana_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231108124747_Authors1")]
+    partial class Authors1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
